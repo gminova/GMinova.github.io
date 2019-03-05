@@ -1,3 +1,18 @@
+body {
+    font-family: 'Chakra Petch', 'Noto Sans JP', 'sans-serif';
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;    
+}
+.background-color {
+  background-color: white;
+  color: black;
+}
+#footer {
+	background-color: white;
+        color: black;	
+}
 .hvrbox,
 .hvrbox * {
 	box-sizing: border-box;
