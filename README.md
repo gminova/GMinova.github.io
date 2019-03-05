@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# username.github.io
-=======
-Portfolio
->>>>>>> c685836ada28d6c3451df551270c16dfa833e607
+# Portfolio
+
+My portfolio is a work in progress which aims to document my progress and learning.
+## Copyright 2019 G.Minova
