@@ -1,27 +1,18 @@
 body {
 	font-family: 'Chakra Petch', 'Noto Sans JP', 'sans-serif';
 	font-size: 20px;
-	background: #ffeee6;
-    
+	background: whitesmoke;
 }
 * {
     margin: 0;
     padding: 0;
   }
-  #navbar {
-      height: 100px;
-    text-align: right;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(#ffeee6, pink)
-        border-box, no-repeat center center;
-  }  
   nav ul li {
     display: inline-block;
-    margin: 55px;
-    margin-bottom: 15px;
+    margin: 15px;
+    margin-bottom: 10px;
     margin-top: 25px;
+    font-weight: bold;
   }
   
   nav ul li a {
@@ -31,18 +22,42 @@ body {
   }
   
   nav ul li a:hover {
-    color: white;
+    color: deeppink;
   }
-.main-wrapper {
+h1 {
+    padding-bottom: 25px;
+}
+  .section {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  
+  .menu {
+    height: 75px;
+    text-align: right;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    background: #ffeee6;    
+    box-shadow: 0 0 4px rgba(0,0,0,.55);
+  } 
+
+  .intro {
+      top: 0;
+      min-height: 100vh;
+      padding-top: 75px;
+  }
+
+.main-content{
     max-width: 1200px;
     min-width: 260px;
     margin: 0 auto;
     font-size: 24px;
+    margin-bottom: 50px;
+
 }
-.menu-icon {
-  display: none;  
-}
-.profileImg {
+.img-profile {
     margin-top: 150px;
     margin-bottom: 50px;
     width: 200px;
@@ -52,7 +67,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.profileImg:hover {
+.img-profile:hover {
   transform: scale(.99);
 }
 * {box-sizing:border-box}
@@ -87,16 +102,21 @@ body {
     text-decoration: none;
     color: #000;
 } */
+.anchor {
+    margin-top: -85px;
+    padding-top: 85px;
+}
 .main-contentProjects, .main-content, .featured, #carousel {
     max-width: 1200px;
     display: block;
+    padding: 50px;
     margin: auto;
     grid-area: contentMain;
     background-color: rgba(255, 255, 255, .35);
     color: #444;
     text-align: justify !important;
     line-height: 1.5em;
-    padding: 5px;
+
     border-radius: 10px;
     /*shadow-box*/
     box-shadow: 0 0 4px rgba(0,0,0,.55);
