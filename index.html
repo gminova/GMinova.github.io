@@ -4,76 +4,89 @@
 		<link href='https://fonts.googleapis.com/css?family=Chakra Petch' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Noto Sans JP' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="js/main.js"></script>
-		<title>Gigi</title>
+		<title>Home</title>
 	</head>
 	<body>
-        <nav class="nav-wrapper">
-        <div class="logo">
-            <strong>Gigi ジジ</strong>
-            </div>
-            <div class="menu-icon"><i class="menu"></i> MENU</div>
-            <ul class="nav-items main-nav mobile-hide">
-            <li class="list-item"><a href="#">Home</a></li>
-            <li class="list-item"><a href="#">About me</a></li>
-            <li class="list-item"><a href="#">Blog</a></li>             
-            <li class="list-item"><a href="#">Contact</a></li>
+        <nav>
+            <ul id="navbar">
+            <li id="welcome-section" class="list-item"><a href="#welcome-section">About</a></li>
+            <li id="projects" class="list-item"><a href="#projects">Projects</a></li>
+            <li id="links" class="list-item"><a href="#links">Links</a></li> 
             </ul>
         </nav>
         <div class="main-wrapper">
-            <div class="wrapper">
-        <div class="featured">
-            <div id="meta">Author Meta</div>
-			<h1>This is the featured headline</h1>
-            <span id="hero-date">March 11, 2019</span></div>
-            <div class="sub-featured">
-            <div class="sub1">
-                <h3>Project 1</h3>
-                </div>
-            <div class="sub2">
-                <h3>Project 2</h3>
-                </div>
-            <div class="sub3">
-                <h3>Project 3</h3>
-                </div>    
-            </div>
-            <div class="main-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                <div class="main-sidebar">
-                <div class="email-subscription">
-                    <h2>Weekly e-mail subscription</h2>
-                    <p>Please subscribe to this webpage to see cool features being added</p>
-                    <form id="subscribe" action="#" accept-charset="UTF-8" method="post"><input placeholder="Email Address" class="email" name="email" id="email" type="email">
-                    <button name="button" action="#" type="submit" class="subscribe">Subscribe</button>
-                    </form>
-                    </div>
-                </div>
-            </div>
-        </div>  
+            <img class="profileImg" src="https://avatars3.githubusercontent.com/u/42014388?s=400&u=3bbc8122dd44c4741c70f00c44b59bff84d38591&v=4">
+            <div class="main-content">
+                <p>Welcome,  </p>
+                <p>My name is Gergana (a.k.a Gigi) and I am in my 20s. I like solving problems and challenges.</p>                
+                <p>I am native in Bulgarian, fluent in English, and I speak basic Japanese. </p></div>
+            <br>
+            <h1 style="text-align:center">Why Founders and Coders?</h1>
+            <div class="main-content">
+                <p>I am hoping that Founders and Coders will allow me to take my desire to help people to the next level. 
+                <p>While I first did coding as a teen in secondary school, I did not pursue my interest into university. Instead, I became a nurse and I have spent the past 1.5 years working with patients and their loved ones.</p>
+                <p>I genuinely love helping people and I am interested in humanitarian and human-centric ways to utilise technologies that can bring more meaning and joy to people’s lives. As a nurse, I have seen first-hand how technology affects people, and I would love to be a part of the digital transformation our society is going through.</p>
+                <p>Thus, in 2018, my passion for coding was rekindled and I undertook online courses in C#. I soon realised that I wanted to change my career from nursing to a web developer, hence I began studying HTML5, CSS3 and JavaScript. </p>
+                <p>I found that studying on my own was quite isolating and my progress was not as rapid as I wanted it to be. This is when I learned about Founders and Coders. I joined their meetup and found a very welcoming and supportive community which quickly made me want to become a part of it. I truly hope I am given the opportunity to join Founders and Coders this summer and fulfil my dream of becoming a full-stack web developer.</p></div>
+            <br>
+            <div id="carousel">                    
+                <img id="img" src="/img/pic1.jpeg"/> 
+                <div id="button">
+                  <div><button id="buttonBack">&#10096;</button></div>
+                  <div><button id="buttonPause">&#9646;&#9646;</button></div>
+                  <div><button id="buttonPlay">&#9654;</button></div>
+                  <div><button id="buttonNext">&#10097;</button></div>
+                </div></div>
+        <h1 style="text-align:center">Projects:</h1>
+        <div class="main-contentProjects">
+            <hr>
+            <h2 class="project-title"> <a href="https://codepen.io/gminova/full/MRjvGB" target="_blank">Image Carousel</a></h2>
+            <hr>
+            <p class="codepen" data-height="825" data-theme-id="0" data-default-tab="result" data-user="gminova" data-slug-hash="MRjvGB" style="height: 646px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Image carousel">
+  <span>See the Pen <a href="https://codepen.io/gminova/pen/MRjvGB/">
+  Image carousel</a> by Gergana (<a href="https://codepen.io/gminova">@gminova</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        <hr>    
+            <h2 class="project-title"> <a href="https://codepen.io/gminova/full/XQdzNZ" target="_blank">Tribute Page</a></h2>
+            <hr>
+            <p class="codepen" data-height="747" data-theme-id="0" data-default-tab="result" data-user="gminova" data-slug-hash="XQdzNZ" style="height: 747px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Marie Kondo Tribute Page">
+  <span>See the Pen <a href="https://codepen.io/gminova/pen/XQdzNZ/">
+  Marie Kondo Tribute Page</a> by Gergana (<a href="https://codepen.io/gminova">@gminova</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+         <hr>               
+            <h2 class="project-title"> <a href="https://codepen.io/gminova/full/bJeoYz" target="_blank">Japanese Memory Game</a></h2>
+            <hr>  
+            <p class="codepen" data-height="740" data-theme-id="0" data-default-tab="result" data-user="gminova" data-slug-hash="bJeoYz" style="height: 740px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Japanese Memory Game">
+  <span>See the Pen <a href="https://codepen.io/gminova/pen/bJeoYz/">
+  Japanese Memory Game</a> by Gergana (<a href="https://codepen.io/gminova">@gminova</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+        <br>       
 	<footer class="footer">
   <div class="foot1">
-    <h3 class="logo">Gigi ジジ</h3>
+    <h3>Gigi ジジ</h3>
     <br/>
-    <p>Some Street 123</p>
+    <p>Based in:</p>
     <p>London, UK</p>
     <br/>
-    <p>123-123-123</p>
   </div>
   <div class="foot2">
     <h4>Awesome Links</h4>
-    <ul class="fa-ul social-footer">
-      <li><span class="fa-li" ><i class="fas fa-check-square"></i></span>List icons can</li>
-      <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
-      <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
-      <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
+    <ul class="links">
+      <li class="github"><a href="https://github.com/gminova" target="_blank">GitHub</a></li>
+      <li class="fcc"><a href="https://www.freecodecamp.org/gminova" target="_blank">FreeCodeCamp</a></li>
+      <li class="codewars"><a href="https://www.codewars.com/users/gminova" target="_blank">Codewars</a></li>
+      <li class="repo"><a href="https://github.com/gminova/gminova.github.io" target="_blank">Repo</a></li>
     </ul>
-  </div>
-  <div class="foot3">
-    <h4>View repo</h4>
-  </div>
-  <div class="foot4">
-    <h4>Social Media</h4>
   </div>
   <div class="copyright">G. Minova &copy; 2019</div>
 </footer>
+<script src="js/main.js"></script>
 </body>
 </html>

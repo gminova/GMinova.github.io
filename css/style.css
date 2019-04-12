@@ -1,145 +1,155 @@
 body {
 	font-family: 'Chakra Petch', 'Noto Sans JP', 'sans-serif';
 	font-size: 20px;
-	background-image: linear-gradient(#FAC2FE, #C2EEFE, #C2FECC, #FEFCC2, #FEDCCB, #FECBCB, #FAC2FE);
+	background: #ffeee6;
     
 }
-.nav-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 20px;
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 30% auto;
-}
-.nav-items {
+* {
+    margin: 0;
+    padding: 0;
+  }
+  #navbar {
+      height: 100px;
     text-align: right;
-    padding-top: 10px;
-}
-.nav-wrapper ul li{
-    display: inline;
-    list-style-type: none;
-}
-.nav-wrapper a{
-    letter-spacing: .1em;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 26px;
-    color: #000;
-}
-.nav-wrapper a:hover{
-    cursor: pointer;
-    color: #000;
-}
-.list-item{
-    margin-left: 10px;
-    text-transform: uppercase;
-    padding: 10px;
-}
-.logo {
-    font-weight: bold;
-}
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(#ffeee6, pink)
+        border-box, no-repeat center center;
+  }  
+  nav ul li {
+    display: inline-block;
+    margin: 55px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+  
+  nav ul li a {
+    color: #724b8b;
+    text-decoration: none;    
+    color: black;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+  }
 .main-wrapper {
     max-width: 1200px;
+    min-width: 260px;
     margin: 0 auto;
     font-size: 24px;
 }
 .menu-icon {
   display: none;  
 }
+.profileImg {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profileImg:hover {
+  transform: scale(.99);
+}
+* {box-sizing:border-box}
 .wrapper {
     max-width: 100%;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    color: #000;
-    grid-template-areas: 
-        "featuredMain featuredMain featuredSub"
-        "contentMain contentMain contentSub"
+    color: #000;    
+    border-radius: 10px;
 }
 .wrapper > .featured,
-.wrapper > .sub-featured > div,
-.wrapper > .main-content,
-.wrapper > .main-sidebar{
-    padding: 20px;
-    
+.wrapper > .main-content{
+    padding: 20px;    
+    border-radius: 10px;    
 }
-.featured {
+/* .featured {
     grid-area: featuredMain;
     min-height: 500px;
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.1))
-        border-box, url(https://source.unsplash.com/1600x900/?pets) no-repeat center center;
+    background: url(/img/laptop.jpg) no-repeat center;
+    background-size: 100%;
     display: grid;
     align-content: flex-end;
-    color: #fff;
-}
-.main-content, .featured, .sub-featured > div, .main-sidebar{
-    box-shadow: 0 0 4px rgba(0,0,0,.55);
+    color: #000;
 }
 .featured h1{
     font-size: :36px;
     max-width:650px;
 }
-.sub-featured {
-    grid-area: featuredSub;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    color: #fff;
+.featured h1:hover {
+  transform: scale(.99);
 }
-.sub-featured h3{
-    margin-top:0;    
-}
-.sub1 {
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.1))
-        border-box, url(https://source.unsplash.com/400x100/?food) no-repeat center center;
-    background-size:cover;
-    color: #fff;
-}
-.sub2 {
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.1))
-        border-box, url(https://source.unsplash.com/400x100/?fashion) no-repeat center center;
-    background-size:cover;
-    color: #fff;
-}
-.sub3 {
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.1))
-        border-box, url(https://source.unsplash.com/400x100/?shopping) no-repeat center center;
-    background-size:cover;
-    color: #fff;
-}
-
-.main-content {
+.featured a{
+    text-decoration: none;
+    color: #000;
+} */
+.main-contentProjects, .main-content, .featured, #carousel {
+    max-width: 1200px;
+    display: block;
+    margin: auto;
     grid-area: contentMain;
     background-color: rgba(255, 255, 255, .35);
     color: #444;
     text-align: justify !important;
     line-height: 1.5em;
-}
-.main-sidebar {
-    grid-area: contentSub;
-    background-color: rgba(255, 255, 255, .35);
-    color: #444;
-    text-align: justify !important;
-    line-height: 1.5em;
+    padding: 5px;
+    border-radius: 10px;
+    /*shadow-box*/
+    box-shadow: 0 0 4px rgba(0,0,0,.55);
 }
 .footer {
-    display: grid;
-    margin: auto;
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.1))
-        border-box, url(https://source.unsplash.com/850x250/?grass) no-repeat center center;
+    display: grid;    
+    border-radius: 10px;
+    background: linear-gradient(#ffeee6, pink)
+        border-box, no-repeat center center;
     background-size:cover;
-    grid-template-columns: minmax(20px, 300px) minmax(20px, 300px) minmax(20px, 300px) minmax(20px, 300px);
+    grid-template-columns: minmax(20px, 400px) minmax(20px, 400px);
     justify-content: center;
-    grid-template-rows: 1fr 1fr;
-    background-color: #333;
-    opacity: 1; 
-    background-color: rgba(0,0,0,0.1);
-    color: #fff;
+    color: #000;
+}
+.links a{    
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+}
+.links li{
+    list-style-type: none;
+    height: 50px;
+    width: 50px;
+    padding-left: 60px;
+    padding-top: 13px;
+}
+li.github {
+    background: url('/img/github.png') no-repeat left top;
+}
+li.fcc {
+    background: url('/img/fcc.png') no-repeat left top;
+}
+li.codewars {
+    background: url('/img/codewars.png') no-repeat left top;
+}
+li.repo {
+    background: url('/img/github.png') no-repeat left top;
+}
+.github:hover {
+  transform: scale(.99);
+}
+.fcc:hover {
+  transform: scale(.99);
+}
+.codewars:hover {
+  transform: scale(.99);
+}
+.repo:hover {
+  transform: scale(.99);
 }
 .footer > div{
-    padding: 20px;
+    padding: 5px;
 }
 .copyright {
     max-width: 1200px;
@@ -147,13 +157,81 @@ body {
     padding: 20px;
     grid-column: 1/-1;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
+.button{
+  background-color: deeppink;
+  border: 2px solid;
+  margin: auto;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+
+#codepen {
+    border-radius: 10px;
+}
+
+/* IMAGE CAROUSEL*/
+#carousel {
+    max-width: 1200px;
+    max-height: auto;
+    position: relative; 
+    margin: auto;
+    background: linear-gradient(#ffeee6, pink, #ffeee6)
+        border-box, no-repeat center center;
+    background-size:cover;
+    border-radius: 10px;  
+
+    }
+    #img { 
+    max-width: 50%;
+    display: block;
+    margin: auto;
+    max-height: inherit; 
+    border-style: none;
+    border-radius: 10px;
+    }
+    #button {
+        display: flex;
+        justify-content: center;
+    }
+    #buttonNext:hover, #buttonBack:hover, #buttonPause:hover, #buttonPlay:hover{
+    transform: scale(1.1);
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    }
+    .buttonSelected{
+    background-color: rgba(0,0,0,0.8) !important;
+    color: white !important;
+    }
+    #buttonNext, #buttonBack, #buttonPause, #buttonPlay{
+    background-color: rgba(255, 20, 147, 0.1);
+    border: 2px solid;
+    color: black;
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;    
+    transition: 0.6s ease;
+    font-weight: bold;
+    margin: 3px;
+    }
+
 
 /*TABLET MEDIA QUERY*/
 @media screen and (max-width: 950px){
     .wrapper {
         grid-template-areas: 
         "featuredMain featuredMain featuredMain"
-        "featuredSub featuredSub featuredSub"
         "contentMain contentMain contentSub"
     }
     .sub-featured {
@@ -189,28 +267,10 @@ body {
     .nav-wrapper ul li{
         display: block;
     }
-    .menu-icon{
-        display: inline-block;
-        justify-self:end;
-        grid-column: 4/5;
-        border: : 2px solid #333;
-        color: #333;
-        padding: 10px;
-        font-weight: bold;
-        border-radius: 3px;
-    }
-    .menu-icon{
-        cursor: pointer;
-    }
     .wrapper{
         grid-template-areas: 
             "featuredMain featuredMain featuredMain"
             "contentMain contentMain contentMain"
-            "featuredSub featuredSub featuredSub"
-            "contentSub contentSub contentSub"
-    }
-    .sub-featured{
-        grid-template-columns: : 1fr;
     }
     .footer > div{
         grid-column: 1/-1;
@@ -218,13 +278,4 @@ body {
     .featured h1{
         font-size: 30px;
     }
-    .mobile-show{
-        display: block;
-    }
-    .mobile-hide{
-        display:none;
-    }
 }
-
-
-
