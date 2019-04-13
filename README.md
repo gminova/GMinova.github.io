@@ -6,7 +6,7 @@ This is a simple website using HTML, CSS, and a bit of raw JavaScript.
 
 1. Host it on GitHub Pages  
 2. Tell us about you  
-3. Why you are applying for the programme?  
+3. Why are you applying for the programme?  
 4. Demonstrate your learning from the prerequisites  
 5. Contain a link back to the GitHub repo that contains the code for your site  
 6. Contain links to your freeCodeCamp and Codewars profiles  
