@@ -4,12 +4,12 @@
 		<link href='https://fonts.googleapis.com/css?family=Chakra Petch' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Noto Sans JP' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>Gigi-Portfolio</title>
+		<title>Portfolio</title>
 	</head>
 	<body>
         <nav  id="navbar" class="menu">
             <ul>
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="#welcome-section">HOME</a></li>
             <li><a href="#why-FAC">WHY FAC?</a></li>
             <li><a href="#img-carousel">CAROUSEL</a></li>
             <li><a href="#projects">PROJECTS</a></li>
@@ -18,7 +18,7 @@
         </nav>
 
 <div class="main-content">
-            <div id="welcome-section" class="intro">
+            <div  id="welcome-section" class="intro">
               <img class="img-profile" src="https://avatars3.githubusercontent.com/u/42014388?s=400&u=3bbc8122dd44c4741c70f00c44b59bff84d38591&v=4">
             
             <h1>Welcome,</h1>
@@ -47,49 +47,38 @@
 
                 <div class="section">
             <h1 id="img-carousel" class="anchor">Image carousel</h1>
-            <div id="carousel">                    
-                <img id="img" src="/img/pic1.jpeg"/> 
-                <div id="button">
-                  <div><button id="buttonBack">&#10096;</button></div>
-                  <div><button id="buttonPause">&#9646;&#9646;</button></div>
-                  <div><button id="buttonPlay">&#9654;</button></div>
-                  <div><button id="buttonNext">&#10097;</button></div>
+            <div class="carousel">                    
+                <img class="carousel-img" id="img" src="/img/pic1.jpeg"/> 
+                <div class="carousel-buttons">
+                  <button id="buttonBack">&#10096;</button>
+                  <button class="button-selected" id="buttonPause">&#9646;&#9646;</button>
+                  <button class="button-selected" id="buttonPlay">&#9654;</button>
+                  <button id="buttonNext">&#10097;</button>
                 </div>
               </div>
               </div>
 
-        <div id="projects" class="section, anchor">        
-        <h1>Projects:</h1>
+        <div id="projects" class="section, anchor">  
+          <h1>Projects:</h1>
+          <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+       <div class="project-tile">
+         <img class="project-img" src="/img/proj1.png">
+        <h3><a href="https://codepen.io/gminova/full/XQdzNZ" target="_blank">Tribute Page</a></h3>
+        </div>
         <div class="project-tile">
-            <h2> <a href="https://codepen.io/gminova/full/MRjvGB" target="_blank">Image Carousel</a></h2>
-           
-            <p class="codepen" data-height="825" data-theme-id="0" data-default-tab="result" data-user="gminova" data-slug-hash="MRjvGB" style="height: 646px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Image carousel">
-  <span>See the Pen <a href="https://codepen.io/gminova/pen/MRjvGB/">
-  Image carousel</a> by Gergana (<a href="https://codepen.io/gminova">@gminova</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-         
-            <h2 class="project-title"> <a href="https://codepen.io/gminova/full/XQdzNZ" target="_blank">Tribute Page</a></h2>
-          
-            <p class="codepen" data-height="747" data-theme-id="0" data-default-tab="result" data-user="gminova" data-slug-hash="XQdzNZ" style="height: 747px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Marie Kondo Tribute Page">
-  <span>See the Pen <a href="https://codepen.io/gminova/pen/XQdzNZ/">
-  Marie Kondo Tribute Page</a> by Gergana (<a href="https://codepen.io/gminova">@gminova</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                      
-            <h2 class="project-title"> <a href="https://codepen.io/gminova/full/bJeoYz" target="_blank">Japanese Memory Game</a></h2>
-              
-            <p class="codepen" data-height="740" data-theme-id="0" data-default-tab="result" data-user="gminova" data-slug-hash="bJeoYz" style="height: 740px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Japanese Memory Game">
-  <span>See the Pen <a href="https://codepen.io/gminova/pen/bJeoYz/">
-  Japanese Memory Game</a> by Gergana (<a href="https://codepen.io/gminova">@gminova</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          <img class="project-img" src="img/proj2.png">
+        <h3><a href="https://codepen.io/gminova/full/MRjvGB" target="_blank">Image Carousel</a></h3>
         </div>
+        <div class="project-tile">
+          <img class="project-img" src="img/proj3.png">
+        <h3> <a href="https://codepen.io/gminova/full/bJeoYz" target="_blank">Japanese Memory Game</a></h3>
         </div>
-      </div>       
+       </div> 
+     </div>
+   </div>
+  </div>      
 	<footer id="links" class="footer">
   <div class="foot1">
     <h3>Gigi ジジ</h3>
@@ -99,7 +88,8 @@
     <br/>
   </div>
   <div class="foot2">
-    <h4>Awesome Links</h4>
+    <h3>Awesome Links:</h3>
+    <br>
     <ul class="links">
       <li class="github"><a id="profile-link" href="https://github.com/gminova" target="_blank">GitHub</a></li>
       <li class="fcc"><a href="https://www.freecodecamp.org/gminova" target="_blank">FreeCodeCamp</a></li>
@@ -107,6 +97,7 @@
       <li class="repo"><a href="https://github.com/gminova/gminova.github.io" target="_blank">Repo</a></li>
     </ul>
   </div>
+  <br>
   <div class="copyright">G. Minova &copy; 2019</div>
 </footer>
 <script src="js/main.js"></script>

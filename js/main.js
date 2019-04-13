@@ -19,7 +19,7 @@ let playButton = document.getElementById("buttonPlay");
 
 window.onload = function () {
     timer = setInterval(autoNext, 2000);
-    playButton.className = 'buttonSelected';    
+    playButton.className = 'button-selected';    
     pauseButton.className = '';
 };
 
@@ -28,7 +28,7 @@ function pause (){
     paused = true;
     //since the user has paused the animation, I re-enable the playButton.
     playButton.disabled = false;
-    pauseButton.className = 'buttonSelected';    
+    pauseButton.className = 'button-selected';    
     playButton.className = '';
 };
 
@@ -71,6 +71,6 @@ playButton.onclick = function () {
         paused = false;
     }
     playButton.disabled = true;
-    playButton.className = 'buttonSelected';    
+    playButton.className = 'button-selected';    
     pauseButton.className = '';
 };
