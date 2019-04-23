@@ -256,6 +256,9 @@ li.repo {
 /*MOBILE MEDIA QUERY*/
 
 @media screen and (max-width: 690px) {
+    .menu {
+        font-size: 20px;
+    }
     .column {
         flex: 100%;
         max-width: 100%;
