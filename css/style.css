@@ -156,11 +156,18 @@ h1 {
 
 /*PROJECTS*/
 .project-tile {
+    padding: 5px;
+    background: white;
     text-align: center;
     border-style: solid;
-    border-color: #000;
+    border-color: lightgray;
     border-radius: 10px;
-    margin: 5px auto;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.project-tile:hover {
+    transform: scale(1.05);
 }
 .project-img {
     width: 100%; 
@@ -181,7 +188,6 @@ h1 {
   }
   
   .column img {
-    margin-top: 8px;
     vertical-align: middle;
   }
 /*FOOTER*/
