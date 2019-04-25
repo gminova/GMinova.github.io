@@ -1,8 +1,8 @@
 //array of image sources
 let images = [
-    "/img/pic1.jpeg",
-    "/img/pic2.jpeg",
-    "/img/pic3.jpeg"
+    "/img/pic1.jpg",
+    "/img/pic2.jpg",
+    "/img/pic3.jpg"
 ]
 
 let index = 0;
