@@ -54,7 +54,7 @@ h1 {
     top: 0;
     width: 100%;
     background: #ffeee6;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .55);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /*CONTENT_WRAPPER*/
