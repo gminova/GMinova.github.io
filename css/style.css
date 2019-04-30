@@ -111,6 +111,7 @@ body {
   }
 
   .welcome-text {
+    font-size: 25px;
     display: inline-block;
     margin-top: 20%;
     padding: 30px;
