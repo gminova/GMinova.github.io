@@ -113,7 +113,7 @@ body {
   }
   /*CAROUSEL*/
   .carousel-img {
-    max-width: 50%;
+    max-width: 60%;
     display: block;
     margin: auto;
     max-height: inherit;
@@ -123,6 +123,8 @@ body {
   }
   
   .carousel-buttons {
+    min-height: 50px;
+    min-width: 60px;
     display: flex;
     justify-content: center;
   }
@@ -259,6 +261,9 @@ body {
     .menu {
       font-size: 20px;
     }
+    .carousel-img {
+      max-width: 80%;
+    }
     .column {
       flex: 50%;
       max-width: 50%;
@@ -273,6 +278,9 @@ body {
   @media screen and (max-width: 690px) {
     .menu {
       font-size: 20px;
+    }
+    .carousel-img {
+      max-width: 100%;
     }
     .column {
       flex: 100%;
