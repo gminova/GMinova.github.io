@@ -157,8 +157,7 @@ body {
   }
   
   .carousel-buttons {
-    min-height: 50px;
-    min-width: 60px;
+    min-height: 70px;
     display: flex;
     justify-content: center;
   }
@@ -185,11 +184,12 @@ body {
     color: black;
     padding: 3px 10px;
     text-align: center;
-    font-size: 16px;
+    font-size: 36px;
     border-radius: 5px;
     transition: 0.6s ease;
     font-weight: bold;
     margin: 3px;
+    min-width: 90px;
   }
   
   /*PROJECTS*/
