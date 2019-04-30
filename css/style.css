@@ -45,6 +45,20 @@ body {
   /*HEADINGS*/
   h1 {
     padding-bottom: 25px;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;    
+    margin: 10px auto;  
+    background: linear-gradient(#ffeee6, rgba(233, 82, 82, 0.185)) border-box,
+      no-repeat center center;
+    background-size: cover;
+    grid-template-columns: minmax(20px, 400px) minmax(20px, 400px);
+    justify-content: center;
+    color: #000;
+    /*shadow-box*/
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.55);
+    display: block;
+    border-radius: 10px;
   }
   
   /*NAVBAR*/
@@ -53,6 +67,9 @@ body {
     text-align: center;
     font-size: 30px;
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     z-index: 100;
     top: 0;
     width: 100%;
@@ -68,7 +85,7 @@ body {
     font-size: 24px;
     display: block;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: white;
     color: black;
     text-align: justify !important;
     line-height: 1.5em;
@@ -78,22 +95,39 @@ body {
   
   /*WELCOME-SECTION*/
   .intro {
+    background: url(/img/img1.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: left;   
+    padding: 50px;
+    margin: 0 auto;
+    line-height: 1.5em;
+    font-size: 24px;
     top: 0;
     min-height: 100vh;
     padding-top: 90px;
-    margin-bottom: 5px;
+  }
+
+  .welcome-text {
+    display: inline-block;
+    margin-top: 20%;
+    padding: 30px;
+    background: lightgray;background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0.8;
+    margin-right: 50%;
   }
   
-  /*AVATAR*/
+  /* AVATAR */
   .img-profile {
-    margin-top: 150px;
-    margin-bottom: 50px;
+    display: block;
+    margin: 30px auto;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   }
   
@@ -258,9 +292,6 @@ body {
   
   /*TABLET MEDIA QUERY*/
   @media screen and (max-width: 1000px) {
-    .menu {
-      font-size: 20px;
-    }
     .carousel-img {
       max-width: 80%;
     }
