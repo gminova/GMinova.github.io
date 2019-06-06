@@ -320,6 +320,7 @@ li.repo {
 }
 
 .copyright {
+  font-size: 15px;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
