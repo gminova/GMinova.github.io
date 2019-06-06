@@ -4,13 +4,13 @@ var navbar = document.getElementById("navbar");
 var closeNav = document.getElementById("closeNav");
 
 mobileNav.onclick = function toggleNav() {
-    mobileNav.style.display = "none";
-    navbar.style.display = "flex";
+  mobileNav.style.display = "none";
+  navbar.style.display = "flex";
 }
 
 closeNav.onclick = function closeNav() {
-    mobileNav.style.display = "block";
-    navbar.style.display = "none";
+  mobileNav.style.display = "block";
+  navbar.style.display = "none";
 }
 
 //array of image sources
@@ -84,3 +84,16 @@ playButton.onclick = function () {
   playButton.className = "button-selected";
   pauseButton.className = "";
 };
+
+//SCROLL TO TOP BUTTON
+window.onscroll = function () {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
