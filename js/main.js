@@ -13,7 +13,7 @@ let pauseButton = document.getElementById("buttonPause");
 
 let playButton = document.getElementById("buttonPlay");
 
-window.onload = function() {
+window.onload = function () {
   timer = setInterval(autoNext, 2000);
   playButton.className = "button-selected";
   pauseButton.className = "";
@@ -48,7 +48,7 @@ function previous() {
   pause();
 }
 
-window.addEventListener("keydown", function(event) {
+window.addEventListener("keydown", function (event) {
   if (event.code === "ArrowRight") {
     next();
   } else if (event.code === "ArrowLeft") {
@@ -60,7 +60,7 @@ nextButton.onclick = next;
 back.onclick = previous;
 pauseButton.onclick = pause;
 
-playButton.onclick = function() {
+playButton.onclick = function () {
   if (paused) {
     timer = setInterval(autoNext, 2000);
     paused = false;
