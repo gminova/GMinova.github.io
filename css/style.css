@@ -37,7 +37,7 @@ h3:hover,
   display: none;
   font-size: 60px;
   cursor: pointer;
-  padding: 10px 10px;
+  padding: 10px 20px;
   float: left;
   position: fixed;
   z-index: 100;
@@ -62,13 +62,12 @@ h3:hover,
 nav ul li {
   display: inline-block;
   margin: 15px;
-  margin-bottom: 10px;
-  margin-top: 25px;
+  margin-bottom: 25px;
   font-weight: bold;
 }
 
 nav ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -78,9 +77,8 @@ h1 {
   padding: 10px;
   font-size: 1.5em;
   text-align: center;
-  margin: 10px auto;
-  background: linear-gradient(#ffeee6, rgba(233, 82, 82, 0.185)) border-box,
-    no-repeat center center;
+  margin: 10px auto;  
+  background: #ddd6da;
   background-size: cover;
   grid-template-columns: minmax(20px, 400px) minmax(20px, 400px);
   justify-content: center;
@@ -93,6 +91,7 @@ h1 {
 
 /*NAVBAR*/
 .menu {
+  color: white;
   height: 90px;
   text-align: center;
   font-size: 2rem;
@@ -103,7 +102,7 @@ h1 {
   z-index: 99;
   top: 0;
   width: 100%;
-  background: #ffeee6;
+  background: #200917;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -268,13 +267,13 @@ h1 {
 
 /*FOOTER*/
 .footer {
-  display: grid;
-  background: linear-gradient(#ffeee6, rgba(233, 82, 82, 0.185)) border-box,
-    no-repeat center center;
+  font-size: 0.9rem;
+  display: grid;  
+  background: #ddd6da;
   background-size: cover;
   grid-template-columns: minmax(20px, 400px) minmax(20px, 400px);
   justify-content: center;
-  color: #000;
+  color: black;
   /*shadow-box*/
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.55);
 }
@@ -282,8 +281,7 @@ h1 {
 .links a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
-  color: #000;
+  color: black;
 }
 
 .links li {
@@ -331,7 +329,7 @@ li.repo {
 /*TABLET MEDIA QUERY*/
 @media screen and (max-width: 1000px) {
   .menu {
-    font-size: 2.2rem;
+    font-size: 2rem;
     height: 190px;
     display: none;
   }
@@ -355,7 +353,7 @@ li.repo {
   }
 
   .footer>div {
-    grid-column: 1/-1;
+    text-align: center;
   }
 }
 
@@ -363,7 +361,7 @@ li.repo {
 
 @media screen and (max-width: 690px) {
   .menu {
-    font-size: 2.5rem;
+    font-size: 2rem;
     height: 200px;
     display: none;
   }
@@ -387,6 +385,6 @@ li.repo {
   }
 
   .footer>div {
-    grid-column: 1/-1;
+    text-align: center;
   }
 }
