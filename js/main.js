@@ -1,3 +1,18 @@
+//NAV-MENU
+var mobileNav = document.getElementById("mobileNav");
+var navbar = document.getElementById("navbar");
+var closeNav = document.getElementById("closeNav");
+
+mobileNav.onclick = function toggleNav() {
+    mobileNav.style.display = "none";
+    navbar.style.display = "flex";
+}
+
+closeNav.onclick = function closeNav() {
+    mobileNav.style.display = "block";
+    navbar.style.display = "none";
+}
+
 //array of image sources
 let images = ["/img/pic1.jpg", "/img/pic2.jpg", "/img/pic3.jpg"];
 
