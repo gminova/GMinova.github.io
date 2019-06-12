@@ -162,7 +162,7 @@ h1 {
 }
 
 .img-profile:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /*SUB-SECTIONS*/
@@ -336,11 +336,10 @@ li.repo {
   outline: none;
   background: #200917;
   opacity: 0.7;
-  font-weight: bold;
   cursor: pointer;
   padding: 8px 10px;
   border-radius: 7px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #myBtn a{
